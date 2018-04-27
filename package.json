@@ -1,0 +1,19 @@
+{
+  "name": "hexo-infinite-scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hexo-infinite-scroll.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontendSophie/hexo-infinite-scroll.git"
+  },
+  "author": "Frontend Sophie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrontendSophie/hexo-infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/FrontendSophie/hexo-infinite-scroll#readme"
+}
