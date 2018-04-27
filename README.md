@@ -1,14 +1,15 @@
 # hexo-infinite-scroll
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability)](https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 > A loading plugin with simple effect for hexo.
 
 ## Usage
 In normal conditions, find `head.ejs` in the theme folder, import and run.
 ```
-<script src="https://unpkg.com/hexo-infinite-scroll@1.0.0/hexo-infinite-scroll.min.js"></script>
-<script src="https://unpkg.com/hexo-infinite-scroll@1.0.0/hexo-infinite-scroll.min.css"></script>
+<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.0.min.js"></script>
+<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.0.min.css"></script>
 <script>
     infiniteScroll({ 
     // default options
