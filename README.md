@@ -2,7 +2,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-> A loading plugin with plain effect for hexo.
+> A loading plugin with simple effect for hexo.
 
 ## Usage
 In normal conditions, find `head.ejs` in the theme folder, import and run.
