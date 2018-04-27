@@ -3,15 +3,18 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability)](https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
 > A loading plugin with simple effect for hexo.
 
 ## Usage
+
 In normal conditions, find `head.ejs` in the theme folder, import and run.
+
 ```
-<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.0.min.js"></script>
-<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.0.min.css"></script>
+<link rel="stylesheet" href="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.1.min.css">
+<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.3.min.js"></script>
 <script>
-    infiniteScroll({ 
+    infiniteScroll({
     // default options
       item: '.post',
       pageSize: 3,
@@ -24,33 +27,40 @@ In normal conditions, find `head.ejs` in the theme folder, import and run.
     })
 </script>
 ```
+
 #### Tips
-* This lib depends on `jQuery`, so make sure `jQuery` has been loaded.  
+
+* This lib depends on `jQuery`, so make sure `jQuery` has been loaded.
 * If loading animation is needless, simply set `loading.enabled` to `false` and leave the css file.
 * Check `_config.yml` and set all the `per_page` to 0 to disable pagination or it won't work.
 
-## General Options  
-|key|description|default|type|
-|:---|---|---|---|
-| item| target item className |`.post`|string|
-| pageSize| show num at a time | 3 |number|
-| time|load time(ms) | 400 |number|
-| loading|loading animation options | { enabled: true, style: 'wave', color: '#f78769' }|object |
+## General Options
 
-## Loading Options  
-|key|values|default|type|
-|:---|---|---|---|
-| enabled| true, false |true|boolean|
-| style| `wave`, `line`, `circle` | `wave` |string|
-| color| ... | `#f78769` |string|
+| key      | description               | default                                            | type   |
+| :------- | ------------------------- | -------------------------------------------------- | ------ |
+| item     | target item className     | `.post`                                            | string |
+| pageSize | show num at a time        | 3                                                  | number |
+| time     | load time(ms)             | 400                                                | number |
+| loading  | loading animation options | { enabled: true, style: 'wave', color: '#f78769' } | object |
+
+## Loading Options
+
+| key     | values                   | default   | type    |
+| :------ | ------------------------ | --------- | ------- |
+| enabled | true, false              | true      | boolean |
+| style   | `wave`, `line`, `circle` | `wave`    | string  |
+| color   | ...                      | `#f78769` | string  |
 
 #### Style Preview
-* wave  
 
-![line](http://osly086qe.bkt.clouddn.com/wave.gif)  
-* line  
+* wave
 
-![line](http://osly086qe.bkt.clouddn.com/line.gif)  
-* circle  
+![line](http://osly086qe.bkt.clouddn.com/wave.gif)
+
+* line
+
+![line](http://osly086qe.bkt.clouddn.com/line.gif)
+
+* circle
 
 ![line](http://osly086qe.bkt.clouddn.com/circle.gif)

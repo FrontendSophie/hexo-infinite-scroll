@@ -1,9 +1,9 @@
 /*!
- * hexo-infinite-scroll.js v1.0.0
+ * hexo-infinite-scroll.js v1.0.3
  * (c) 2018 Frontend Sophie
  * Released under the MIT License.
  */
-(function (export) {
+(function (exports) {
   const generateOptions = customOptions => {
     let defaultOptions = {
       item: '.post',
@@ -97,7 +97,7 @@
         $(window).scroll(showNext)
       }
     })
-
-    export.infiniteScroll = infiniteScroll;
   }
+
+  exports.infiniteScroll = infiniteScroll;
 })(window);
