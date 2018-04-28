@@ -6,6 +6,9 @@
 
 > A loading plugin with simple effect for hexo.
 
+## Demo
+[View demo](http://ssnowy.coding.me/demo-autumn/)
+
 ## Usage
 
 In normal conditions, find `head.ejs` in the theme folder, import and run.
