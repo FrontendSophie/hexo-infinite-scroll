@@ -2,7 +2,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability)](https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/hexo-infinite-scroll/blob/master/LICENSE)
 
 > A loading plugin with simple effect for hexo.
 
