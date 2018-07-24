@@ -11,7 +11,7 @@
 
 ## Usage
 
-In normal conditions, find `head.ejs` in the theme folder, import and run.
+In normal conditions, find `head.ejs` (or `head.swig`) in the theme folder, import and run.
 
 ```
 <link rel="stylesheet" href="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.1.min.css">
