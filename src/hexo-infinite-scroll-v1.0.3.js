@@ -1,8 +1,12 @@
-/*!
- * hexo-infinite-scroll.js v1.0.3
- * (c) 2018 Frontend Sophie
- * Released under the MIT License.
- */
+/**
+ * https://github.com/FrontendSophie/hexo-infinite-scroll
+ * A fake infinite loading plugin for hexo.
+ * @version v1.0.3
+ * @author Sophie He
+ * @copyright ©2018 Sophie He
+ * Released under the MIT license
+ **/
+
 (function (exports) {
   const generateOptions = customOptions => {
     let defaultOptions = {
