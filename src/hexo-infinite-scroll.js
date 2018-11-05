@@ -1,7 +1,7 @@
 /**
  * https://github.com/FrontendSophie/hexo-infinite-scroll
  * A fake infinite loading plugin for hexo.
- * @version v1.0.3
+ * @version v1.0.0
  * @author Sophie He
  * @copyright ©2018 Sophie He
  * Released under the MIT license
