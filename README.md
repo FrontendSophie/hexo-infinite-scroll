@@ -13,8 +13,8 @@
 Check `head.ejs`(or `head.swig`) in the theme folder and add below:
 
 ```
-<link rel="stylesheet" href="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.1.min.css">
-<script src="http://osly086qe.bkt.clouddn.com/hexo-infinite-scroll-v1.0.3.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.css">
+<script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.js"></script>
 <script>infiniteScroll();</script>
 ```
 
@@ -45,12 +45,12 @@ Check `head.ejs`(or `head.swig`) in the theme folder and add below:
 
 - wave
 
-![line](http://osly086qe.bkt.clouddn.com/wave.gif)
+![wave](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/wave.gif)
 
 - line
 
-![line](http://osly086qe.bkt.clouddn.com/line.gif)
+![line](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/line.gif)
 
 - circle
 
-![line](http://osly086qe.bkt.clouddn.com/circle.gif)
+![circle](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/circle.gif)
