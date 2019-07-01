@@ -1,8 +1,10 @@
 # hexo-infinite-scroll
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability)](https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability)
+[![](https://data.jsdelivr.com/v1/package/gh/frontendsophie/hexo-infinite-scroll/badge)](https://www.jsdelivr.com/package/gh/frontendsophie/hexo-infinite-scroll)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/hexo-infinite-scroll/blob/master/LICENSE)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 
 > 💮 A fake infinite loading plugin for hexo.
 
