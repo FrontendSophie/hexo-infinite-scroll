@@ -1,0 +1,42 @@
+{
+  "name": "hexo-infinite-scroll",
+  "version": "2.0.0",
+  "description": "a fake infinite scroll plugin for hexo",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "commitizen": "^3.1.1",
+    "css-loader": "^3.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "prettier": "^1.18.2",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --webpack.config.js --mode development",
+    "build": "webpack --webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontendSophie/hexo-infinite-scroll.git"
+  },
+  "keywords": [
+    "infinite-scroll",
+    "hexo"
+  ],
+  "author": "Sophie He",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrontendSophie/hexo-infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/FrontendSophie/hexo-infinite-scroll#readme"
+}
