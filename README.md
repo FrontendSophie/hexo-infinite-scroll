@@ -10,17 +10,14 @@
 
 [View demo](http://ssnowy.coding.me/demo-autumn/)
 
-## Install
-```
-npm install hexo-infinite-scroll -S
-```
-
-## Usage
-
+## Install & Usage
 Check `head.ejs`(or `head.swig`) in the theme folder and add:
 
 ```
-<%- infiniteScroll() %>
+<script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script> 
+<script>
+    infiniteScroll()
+</script>
 ```
 
 #### Tips
@@ -40,12 +37,11 @@ In case not working, please check `_config.yml` and set all the `per_page` to 0 
 #### About Loaders
 
 Loaders are all generated through [loaders.css](https://github.com/ConnorAtherton/loaders.css) by ConnorAtherton.    
-[Click to preview](https://connoratherton.com/loaders) and pick up what you like.  
-Set its className to the config, for example:
+[Click to preview](https://connoratherton.com/loaders) and pick up what you like. Then set its className to the config, for example:
 ```
-<%- infiniteScroll({
+infiniteScroll({
     style: 'ball-pulse'
-}) %>
+})
 ```
 🎉
 
@@ -54,7 +50,7 @@ Set its className to the config, for example:
 #### Improvements
 
 + Abandoned jquery and embraced TypeScript.
-+ Simplified install process, followed hexo plugin custom (use npm install), bundled js and css into one file.
++ Simplified install process, bundled js and css into one file.
 + Fixed Android scroll bug.
 + More loader options coming from loaders.css.
 
