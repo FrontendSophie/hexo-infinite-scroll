@@ -1,7 +1,7 @@
 import { LOADER_INNER_DIVS } from '../helpers/constants'
 
 export interface ScrollerConfig {
-  postClass: string
+  post: string
   showNum: number
   loadTime: number
   style: keyof typeof LOADER_INNER_DIVS

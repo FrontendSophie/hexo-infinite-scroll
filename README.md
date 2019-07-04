@@ -1,58 +1,69 @@
 # hexo-infinite-scroll
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability)](https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability)
-[![](https://data.jsdelivr.com/v1/package/gh/frontendsophie/hexo-infinite-scroll/badge)](https://www.jsdelivr.com/package/gh/frontendsophie/hexo-infinite-scroll)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/hexo-infinite-scroll/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 
-> 💮 A fake infinite loading plugin for hexo.
+> ⌛ A fake infinite loading plugin for hexo.
+
 
 [View demo](http://ssnowy.coding.me/demo-autumn/)
 
-## Installation & Usage
+## Install
+```
+npm install hexo-infinite-scroll -S
+```
 
-Check `head.ejs`(or `head.swig`) in the theme folder and add below:
+## Usage
+
+Check `head.ejs`(or `head.swig`) in the theme folder and add:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.css">
-<script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.js"></script>
-<script>infiniteScroll();</script>
+<%- infiniteScroll() %>
 ```
 
 #### Tips
 
-- This library depends on `jQuery`, please make sure `jQuery` has been loaded.
-- In case not working, please check `_config.yml` and set all the `per_page` to 0 to disable pagination.
-- To abandon animation, simply set `loading.enabled` to `false` and leave the css file.
+In case not working, please check `_config.yml` and set all the `per_page` to 0 to disable pagination.
 
-## General Options
+## Config
 
-| key      | description               | default                                            | type   |
-| :------- | ------------------------- | -------------------------------------------------- | ------ |
-| item     | target item className     | `.post`                                            | string |
-| pageSize | show num at a time        | 3                                                  | number |
-| time     | load time(ms)             | 400                                                | number |
-| loading  | loading animation options | { enabled: true, style: 'wave', color: '#f78769' } | object |
+| key | description | default | type |
+| :--- | --------- | -------- | ------ |
+| post | selector of post | '.post'| string |
+| showNum | posts show number per scroll | 3 | number |
+| loadTime | loading animation show time(ms) | 400 | number |
+| style | class Name of loader | 'line-scale'  | string |
+| color | color of loader | '#f78769'  | string |
 
-## Loading Options
+#### About Loaders
 
-| key     | values                   | default   | type    |
-| :------ | ------------------------ | --------- | ------- |
-| enabled | true, false              | true      | boolean |
-| style   | `wave`, `line`, `circle` | `wave`    | string  |
-| color   | ...                      | `#f78769` | string  |
+Loaders are all generated through [loaders.css](https://github.com/ConnorAtherton/loaders.css) by ConnorAtherton.    
+[Click to preview](https://connoratherton.com/loaders) and pick up what you like.  
+Set its className to the config, for example:
+```
+<%- infiniteScroll({
+    style: 'ball-pulse'
+}) %>
+```
+🎉
 
-#### Style Preview
+## About v2
 
-- wave
+#### Improvements
 
-![wave](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/wave.gif)
++ Abandoned jquery and embraced TypeScript.
++ Simplified install process, followed hexo plugin custom (use npm install), bundled js and css into one file.
++ Fixed Android scroll bug.
++ More loader options coming from loaders.css.
 
-- line
+#### Breaking changes from v1
 
-![line](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/line.gif)
++ API: 
+    - v2 flattened and renamed API to be more readable.
+    - v2 removed `loading.enabled` option which means loader will always display. 
++ Loaders: 
+    - v2 replaced old loaders with new loaders from loaders.css.
 
-- circle
-
-![circle](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/circle.gif)
+v1 is still available and its source code is now under `v1/` folder.

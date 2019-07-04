@@ -11,7 +11,7 @@ export default class Scroller {
 
   constructor(config: CustomScrollerConfig) {
     this.config = mergeConfig(config)
-    this.posts = new Posts(this.config.postClass)
+    this.posts = new Posts(this.config.post)
   }
 
   init() {

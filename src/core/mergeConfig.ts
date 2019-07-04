@@ -4,7 +4,7 @@ export default function mergeConfig(
   config: CustomScrollerConfig
 ): ScrollerConfig {
   const DEFAULT_CONFIG = {
-    postClass: '.post',
+    post: '.post',
     showNum: 3,
     loadTime: 400,
     style: 'line-scale',
