@@ -32,14 +32,12 @@ export default class Scroller {
     window.addEventListener(
       'scroll',
       throttle(() => {
-        const {
-          scrollTop,
-          scrollHeight,
-          clientHeight
-        } = document.documentElement
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop // mobile compatible
+        const scrollHeight = document.documentElement.scrollHeight
+        const viewportHeight = window.innerHeight // instead of clientHeight for android compatible
         const REMAINED_GAP = 50
         const reachBottom =
-          scrollTop >= scrollHeight - clientHeight - REMAINED_GAP
+          scrollTop >= scrollHeight - viewportHeight - REMAINED_GAP
 
         const currentShowCount = count * this.config.showNum
         let isLastPost = currentShowCount >= this.posts.size()
