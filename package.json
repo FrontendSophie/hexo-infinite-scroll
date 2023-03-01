@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^3.1.1",
+    "commitizen": "^4.3.0",
     "css-loader": "^3.0.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
